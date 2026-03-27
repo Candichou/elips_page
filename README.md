@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# 🌟 Elips Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Single Page Application dédiée à **Elips**, candidate iconique de Drag Race France.  
+> Projet réalisé en **pair-programming** dans le cadre d'une formation en développement web.
 
-Currently, two official plugins are available:
+🔗 **[Voir le site en live →](https://elips-page.vercel.app)**
+![Aperçu](./screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Contexte du projet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ce projet a été conçu à deux, en pair-programming, avec pour objectif de créer une page vitrine pour une personnalité publique qui n'a pas encore de site officiel. C'était aussi l'occasion de consolider nos compétences sur React Router et de travailler en binôme comme en conditions professionnelles.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Fonctionnalités
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🎠 **Carrousel d'images** — défilement automatique, pause au survol et au clic
+- 📱 **Navbar responsive** — menu burger sur mobile, navigation fluide sur desktop
+- 🧭 **Routing SPA** — navigation entre sections sans rechargement de page (React Router)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Stack technique
+
+| Technologie | Usage |
+|---|---|
+| React | UI & composants |
+| React Router | Navigation SPA |
+| TypeScript | Typage statique |
+| Tailwind CSS | Styles & responsive |
+| Vercel | Déploiement |
+
+---
+
+## 🚀 Lancer le projet en local
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👩‍💻 Réalisé par
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Projet développé en binôme avec @Ocette dans le cadre d'une formation en développement web.
