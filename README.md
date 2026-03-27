@@ -4,7 +4,7 @@
 > Projet réalisé en **pair-programming** dans le cadre d'une formation en développement web.
 
 🔗 **[Voir le site en live →](https://elips-page.vercel.app)**
-![Aperçu](./screenshot.png)
+![Aperçu](./src/assets/screenshot_app.png)
 
 ---
 
@@ -24,19 +24,21 @@ Ce projet a été conçu à deux, en pair-programming, avec pour objectif de cr�
 
 ## 🛠 Stack technique
 
-| Technologie | Usage |
-|---|---|
-| React | UI & composants |
-| React Router | Navigation SPA |
-| TypeScript | Typage statique |
+| Technologie  | Usage               |
+| ------------ | ------------------- |
+| React        | UI & composants     |
+| React Router | Navigation SPA      |
+| TypeScript   | Typage statique     |
 | Tailwind CSS | Styles & responsive |
-| Vercel | Déploiement |
+| Vercel       | Déploiement         |
 
 ---
 
 ## 🚀 Lancer le projet en local
+
 npm install
 npm run dev
+
 ```
 
 ---
@@ -44,3 +46,4 @@ npm run dev
 ## 👩‍💻 Réalisé par
 
 Projet développé en binôme avec @Ocette dans le cadre d'une formation en développement web.
+```
